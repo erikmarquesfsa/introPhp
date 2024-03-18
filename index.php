@@ -36,7 +36,7 @@
             <div class="container">
                 <h2> A nota do elemento é
                     <?php
-                    echo $_GET['nota1'] + $_GET['nota2'] + $_GET['nota3'];
+                    echo round(($_GET['nota1'] + $_GET['nota2'] + $_GET['nota3'])/3,1);
                     ?>
                 </h2>
             </div>
