@@ -15,18 +15,19 @@
             <form method="get" action="">
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Nota 1</label>
-                    <input type="number" class="form-control" name="nota1" id="formGroupExampleInput" placeholder="Digite a Primeira Nota">
+                    <input type="number" required class="form-control" name="nota1" id="formGroupExampleInput" placeholder="Digite a Primeira Nota">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Nota 2</label>
-                    <input type="number" class="form-control" name="nota2" id="formGroupExampleInput2" placeholder="Digite a Segunda Nota">
+                    <input type="number" required class="form-control" name="nota2" id="formGroupExampleInput2" placeholder="Digite a Segunda Nota">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Nota 3</label>
-                    <input type="number" class="form-control" name="nota3" id="formGroupExampleInput2" placeholder="Digite a terceira nota">
+                    <input type="number" required class="form-control" name="nota3" id="formGroupExampleInput2" placeholder="Digite a terceira nota">
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary">Enviar Dados</button>
+                    <a href="index.php" class="btn btn-danger">Resetar</a>
                 </div>
             </form>
         </div><!-- ENCERRA DIV DO FORM -->
@@ -36,7 +37,13 @@
             <div class="container">
                 <h2> A nota do elemento é
                     <?php
-                    echo round(($_GET['nota1'] + $_GET['nota2'] + $_GET['nota3'])/3,1);
+                    $media = ($_GET['nota1'] + $_GET['nota2'] + $_GET['nota3'])/3;
+                    echo round($media,1);
+                    if($media<7) {
+                        echo " e ele foi REPROVADO";
+                    } else {    
+                        echo " e ele foi APROVADO";
+                    }
                     ?>
                 </h2>
             </div>
