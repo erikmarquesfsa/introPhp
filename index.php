@@ -15,15 +15,15 @@
             <form method="get" action="">
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Nota 1</label>
-                    <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                    <input type="number" class="form-control" name="nota1" id="formGroupExampleInput" placeholder="Digite a Primeira Nota">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Nota 2</label>
-                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                    <input type="number" class="form-control" name="nota2"  id="formGroupExampleInput2" placeholder="Digite a Segunda Nota">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Nota 3</label>
-                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                    <input type="number" class="form-control" name="nota3"  id="formGroupExampleInput2" placeholder="Digite a terceira nota">
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary">Enviar Dados</button>
