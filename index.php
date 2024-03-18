@@ -12,14 +12,23 @@
     <div class="container">
         <h1>Calculadora de Média</h1>
         <div class="container">
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Example label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-            </div>
+            <form method="get" action="">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nota 1</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Nota 2</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Nota 3</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Enviar Dados</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
