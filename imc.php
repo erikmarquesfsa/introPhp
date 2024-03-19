@@ -14,11 +14,11 @@
         <form method="get" action="">
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Peso</label>
-                <input type="number" class="form-control" name="peso" id="formGroupExampleInput" placeholder="Digite seu Peso">
+                <input type="text" class="form-control" name="peso" id="formGroupExampleInput" placeholder="Digite seu Peso">
             </div>
             <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Altura</label>
-                <input type="number" class="form-control"  name="altura" id="formGroupExampleInput2" placeholder="Digite sua Altura">
+                <input type="text" class="form-control"  name="altura" id="formGroupExampleInput2" placeholder="Digite sua Altura">
             </div>
             <div class="mb-3">
                 <button type="submit" class="btn btn-dark">Salvar</button>
