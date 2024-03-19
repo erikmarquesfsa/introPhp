@@ -11,6 +11,9 @@
 <body>
     <div class="container">
         <h1>Calculadora de Média</h1>
+        <?php
+        if (empty($_GET)) { 
+        ?>
         <div class="container">
             <form method="get" action="">
                 <div class="mb-3">
@@ -31,6 +34,8 @@
                 </div>
             </form>
         </div><!-- ENCERRA DIV DO FORM -->
+        <?php } ?>
+
         <?php
         if (!empty($_GET)) { //VALIDA SE EXISTE ALGO DENTRO DO GET
         ?>
@@ -40,12 +45,13 @@
                     $media = ($_GET['nota1'] + $_GET['nota2'] + $_GET['nota3'])/3;
                     echo round($media,1);
                     if($media<7) {
-                        echo " e ele foi REPROVADO";
+                        echo " e ele foi <span class='text-danger'>REPROVADO</span>";
                     } else {    
-                        echo " e ele foi APROVADO";
+                        echo " e ele foi <span class='text-sucess'>APROVADO</span>";
                     }
                     ?>
                 </h2>
+                <a href="index.php" class="btn btn-danger">Resetar</a>
             </div>
         <?php } ?>
 
